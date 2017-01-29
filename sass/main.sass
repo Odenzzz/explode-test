@@ -1,0 +1,269 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+.loadEl
+	z-index: 9999
+	position: absolute
+	width: 100%
+	div
+		display: inline-block
+	.left-load
+		position: relative
+		left: 25%
+		height: 0
+		width: 0
+		box-shadow: 20px 0 30px rgba(0,0,0,.8)
+	.left-bg
+		position: absolute
+		background-color: #2D2A81
+		height: 100%
+		width: 26%
+		left: 74%
+	.right-load
+		z-index: 999
+		position: relative
+		right: 25%
+		height: 0
+		width: 0
+		box-shadow: -20px 0 30px rgba(0,0,0,.8)
+	.right-bg
+		position: absolute
+		left: 0%
+		height: 100%
+		width: 25%
+		background-color: #108AEF
+	img
+		z-index: 9999
+		width: 150px
+		position: absolute
+		left: 45%
+		top: 43%
+canvas
+	position: absolute
+	z-index: 102
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+body
+	overflow: hidden
+	font-family: Roboto
+	font-size: 16px
+.main-wrapper
+	position: relative
+	z-index: 101
+	height: 990px
+	width: 100%
+	background-color: rgba(255, 255, 255, 0.2)
+	background: #a2c8f9
+	background: linear-gradient(to top, #363636, #9A9A9A)
+header
+	position: absolute
+	width: 100%
+	top: 0px
+	left: 0px
+	height: 150px
+.content
+	position: relative
+	top: 20%
+.menu-bg
+	z-index: 110
+	background-color: #0c1e2c
+	height: 250px
+	width: 200%
+	position: relative
+	transform: rotate(7deg)
+	left: -5%
+	margin-top: -5%
+	box-shadow: 0px 20px 15px rgba(0,0,0,.8)
+	padding: 0px
+.menu
+	z-index: 110
+	font-family: ubuntu
+	color: white
+	font-weight: bold
+	position: absolute
+	top: 30px
+	right: 20%
+	li
+		z-index: 999
+		display: inline-block
+		margin-right: 40px
+		cursor: pointer
+		user-select: none
+	li:after
+		display: block
+		content: ""
+		height: 2px
+		margin-left: 50%
+		width: 0%
+		background-color: #ffeb3b
+		transition: .3s 
+	li:before
+		display: block
+		content: ""
+		height: 2px
+		margin-left: 50%
+		width: 0%
+		background-color: #ffeb3b
+		transition: .3s 
+	li:hover:after
+		width: 100%
+		margin-left: 0%
+	li:hover:before
+		width: 100%
+		margin-left: 0%
+
+.logo
+	user-select: none
+	width: 8%
+	position: absolute
+	left: 45%
+	margin-top: 23%
+	opacity: 0.15
+	img
+		width: 100%
+
+.open-text, .close-text, .open-text-zoom
+	min-width: 140px
+	text-align: center
+	padding: 20px
+	background-color: white
+	color: red
+	border: 1px solid red
+	display: inline-block
+	position: relative
+	left: 45.5%
+	top: 50px
+	opacity: 1 !important
+	z-index: 100
+	cursor: pointer
+	user-select: none
+	font-family: Arial
+.open-text-zoom
+	left: 20%
+
+.text-box
+
+	width: 30px
+	height: 240px
+	border: 1px solid white
+	background-color: rgba(0, 0, 0, 0.7)
+	text-align: center
+	padding: 5px
+	color: white
+	position: relative
+	left: 49%
+	top: 1000px
+	cursor: default
+	user-select: none
+	box-shadow: 0 0 50px rgba(0,0,0,.8)
+	p
+		opacity: 0
+		position: relative
+		top: 100px
+	h1
+		opacity: 0
+
+.next, .prev
+	position: absolute
+	top: 50px
+	left: 50px
+	z-index: 100
+	color: red
+	border: 1px solid red
+	background-color: white
+	padding: 5px
+	min-width: 50px
+	cursor: pointer
+	user-select: none
+.prev
+	top: 90px
+
+.bg-image
+	background-size: cover
+	position: absolute
+	width: 100%
+	background-repeat: no-repeat
+	z-index: 1
+.left-side
+	z-index: 100
+	position: absolute
+	left: 0
+	width: 50%
+	overflow: hidden
+.right-side
+	position: absolute
+	width: 50%
+	left: 50%
+	height: 980px
+	overflow: hidden
+.left, .right
+	position: relative
+	width: 200%
+	height: 100%
+	z-index: 2
+.left
+	background-color: #45C3AD
+.right
+	background-color: #E827EA
+	left: -100%
+.bg-left-1
+	width: 100%
+	height: 100%
+	background: url(/img/bg-1.jpg)
+	background-size: 100%
+	background-repeat: no-repeat
+.bg-right-1
+	height: 100%
+	width: 100%
+	background: url(/img/bg-1.jpg) 
+	background-size: 100%
+	background-repeat: no-repeat
+.bg-left-2
+	position: absolute
+	width: 100%
+	height: 100%
+	background: url(/img/bg-2.jpg)
+	background-size: 100%
+	background-repeat: no-repeat
+.bg-right-2
+	position: absolute
+	height: 100%
+	width: 100%
+	background: url(/img/bg-2.jpg) 
+	background-size: 100%
+	background-repeat: no-repeat
+.bg-left-3
+	position: absolute
+	width: 100%
+	height: 100%
+	background: url(/img/bg-3.jpg)
+	background-size: 100%
+	background-repeat: no-repeat
+
+.bg-right-3
+	position: absolute
+	height: 100%
+	width: 100%
+	background: url(/img/bg-3.jpg) 
+	background-size: 100%
+	background-repeat: no-repeat
+.bg-left-4
+	position: absolute
+	width: 100%
+	height: 100%
+	background: url(/img/bg-4.jpg)
+	background-size: 100%
+	background-repeat: no-repeat
+.bg-right-4
+	position: absolute
+	height: 100%
+	width: 100%
+	background: url(/img/bg-4.jpg) 
+	background-size: 100%
+	background-repeat: no-repeat
+
+
+@import "media"
